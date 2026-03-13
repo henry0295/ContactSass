@@ -1,0 +1,18 @@
+{
+  "enabled": true,
+  "name": "QA Agent",
+  "description": "Automatically performs quality assurance checks on code including syntax, best practices, security, and potential bugs",
+  "version": "1",
+  "when": {
+    "type": "preToolUse",
+    "toolTypes": [
+      "whrite"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Perform a comprehensive QA review of the codebase. Check for: 1) Code quality and best practices, 2) Potential bugs or logic errors, 3) Security vulnerabilities, 4) Performance issues, 5) Code consistency and style, 6) Missing error handling. Provide specific recommendations for improvements."
+  },
+  "workspaceFolderName": "ContactSass",
+  "shortName": "qa-agent-hook"
+}

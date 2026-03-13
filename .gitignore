@@ -1,0 +1,68 @@
+# Laravel
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/bootstrap/cache
+.env.local
+.env.*.local
+
+# Environment
+.env
+.env.backup
+.env.production.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Dependencies
+vendor/
+composer.lock
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+.nuxt/
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Docker
+.docker/tmp/
+postgres_data/
+redis_data/
+
+# Logs
+*.log
+storage/logs/*
+
+# Testing
+.phpunit.result.cache
+.coverage
+coverage.xml
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Database
+*.sqlite
+*.sqlite3

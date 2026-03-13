@@ -1,0 +1,28 @@
+{
+  "enabled": true,
+  "name": "Code Quality Review",
+  "description": "Analyzes modified source code for potential improvements including code smells, design patterns, best practices, readability, maintainability, and performance optimizations",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "*.php",
+      "*.js",
+      "*.ts",
+      "*.jsx",
+      "*.tsx",
+      "*.py",
+      "*.java",
+      "*.go",
+      "*.rb",
+      "*.cs",
+      "*.cpp",
+      "*.c",
+      "*.h"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review the code changes in this file for potential improvements. Analyze for: code smells, applicable design patterns, best practices violations, readability issues, maintainability concerns, and performance optimization opportunities. Provide specific, actionable suggestions while ensuring functionality remains intact."
+  }
+}
